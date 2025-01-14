@@ -2,6 +2,7 @@ body {
     background-image: url("painelgold.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    
      
  }
 
@@ -10,6 +11,7 @@ body {
      background-image:  url("painelgold.jpg");
      background-size: cover;
      background-position: center;
+    margin-top: 75px;
      border: 1px solid #000000;
      border-radius: 5px;
      color: white;
@@ -45,7 +47,6 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
-    
      bottom: 0;
      left: 0;
      right: 0;
