@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação de Ouro</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+ 
+    <section>
+       
+      <div id="print" class="print">
+
+        
+          <h1>Cotação do Ouro</h1>
+        
+         <div class="enters">
+
+        <label class="titulo" for="valor da grama"> Valor da grama</label>
+        <input type="number" id="VG" name="valor da grama">
+
+        <label class="titulo" for="spread">Spread %</label> 
+        <input type="number" id="SP" name="spread">
+        
+        <label class="titulo" for="quantidade de gramas"> Quantidade de gramas</label>
+        <input type="number" id="QG" name="quantidade de gramas">
+
+        <label> Custo do frete</label>
+        <input type="number" id="FR">
+        
+          
+        <p  class="showitemoff"> Valor da Grama: <span id="valorgramafi"></span></p>
+        <p  class="showitemoff"> Valor do Frete + Seguro: R$ <span id="valorfinalfrete"></span></p>
+        <p  class="showitemoff">Valor Final: <span id="total"> </span></p>
+         
+        <button class="bt">Calcular</button>
+
+        <div class=" showitemoff buttons">
+          
+        <button class="showitemoff buttonnsfim" id="buttonPrint"> Enviar</button><button class="showitemoff buttonnsfim" id="retray"> Refazer</button>
+        </div> 
+         
+        </div>
+         
+      </div>    
+
+    </section>
+   
+
+    <script type="module" src="/js/api.js" type="module"></script>
+    <script type="module" src="/js/app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <footer>
+       
+     
+    </footer>
+</body>
+</html>
