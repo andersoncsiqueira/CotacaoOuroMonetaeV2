@@ -1,5 +1,5 @@
 body {
-    background-image: url("ouro.webp");
+    background-image: url("painelgold.jpg");
     background-repeat: no-repeat;
     background-size:cover;
      
@@ -7,7 +7,7 @@ body {
 
  
  .print {
-     background-image:  url("../Img/ourodiv.avif");
+     background-image:  url("painelgold.jpg");
      background-size: cover;
      background-position: center;
      border: 1px solid #000000;
