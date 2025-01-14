@@ -9,7 +9,7 @@ const divContainerFormanipulatiom = divContainers.children
 let valorFinalGram = document.querySelector("#valorgramafi")
 let valorFreteFinal = document.querySelector("#valorfinalfrete")
 let total = document.querySelector("#total")
-const buttonPrint = document.querySelector("#buttonPrint")
+const quantidadeDeGramas = document.querySelector("#quantidadedegramas")
 const buttonRetry = document.querySelector("#retray")
 const formatoBRL = new Intl.NumberFormat('pt-BR', { 
     style: 'currency', 
@@ -21,7 +21,8 @@ button.addEventListener("click", ()=> {
     
     valorFinalGram.innerText = formatoBRL.format((Number(valorDaGrama.value) * (((Number(spread.value)/100)) + 1)))
     
-    
+    quantidadeDeGramas.innerText = quantidade.value
+
     valorFreteFinal.innerText = formatoBRL.format(Number(custoDoFrete.value))
 
 
@@ -49,23 +50,7 @@ buttonRetry.addEventListener("click", () => {
 })
 
 
-buttonPrint.addEventListener('click', () => {
-
-    Array.from(document.querySelectorAll(".buttonnsfim")).forEach(b => b.classList.toggle("showitemoff"))
-    
-    //setTimeout(()=> console.log("Aguarde 5 segundos"),5000)
-
-    const element = document.getElementById('print');
-    html2canvas(element).then((canvas) => {
-      // Baixar a imagem
-      const link = document.createElement('a');
-      link.download = 'screenshot.png';
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-    });
-
-   setTimeout(()=>location.reload(),2000)
-
-  });
 
   console.log("Atualizei 15.02")
+
+  
