@@ -42,6 +42,10 @@ body {
  
  .enters {
      position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
      bottom: 0;
      left: 0;
      right: 0;
@@ -84,6 +88,7 @@ body {
  p {
      margin: 10px;
      text-align: center;
+     padding: 5px;
      width: fit-content;
      width: 80mm;
      border-top-left-radius: 3px;

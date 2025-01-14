@@ -64,7 +64,7 @@ buttonPrint.addEventListener('click', () => {
       link.click();
     });
 
-   setTimeout(()=>location.reload(),4000)
+   setTimeout(()=>location.reload(),2000)
 
   });
 
