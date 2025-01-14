@@ -16,8 +16,8 @@ const gold = async (url, urlLastUp) => {
    const responseBrl = await fetch(urlLastUp)
    
    const datas = await responseBrl.json() 
-   const sellPrice = datas[USDBRL].bid
-   const callPrice = datas[USDBRL].ask
+   const sellPrice = datas['USDBRL'].bid
+   const callPrice = datas['USDBRL'].ask
    const basePrice = ((Number(sellPrice) + Number(callPrice)) / 2).toFixed(2)
 
 
