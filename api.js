@@ -1,10 +1,10 @@
 
-const newApiBaseUrl = "https://awesomeapi-proxy-monetae-production.up.railway.app/moeda?base=XAU&target=USD"
+const newApiBaseUrl = "https://awesomeapi-proxy-monetae-production-f336.up.railway.app/moeda?base=XAU&target=USD"
 //const urlBr = "https://economia.awesomeapi.com.br/last/USD-BRL"
-const urlBr = "https://awesomeapi-proxy-monetae-production.up.railway.app/moeda?base=USD&target=BRL"
+const urlBr = "https://awesomeapi-proxy-monetae-production-f336.up.railway.app/moeda?base=USD&target=BRL"
 const inputPrice = document.querySelector("#VG")
 
-console.log("atualização 25 d0 4")
+console.log("atualização 04 do 6 2025")
 const gold = async () => {
    const  response = await fetch(newApiBaseUrl)
    const data =  await response.json()
